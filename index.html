@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="dist/sweetalert2.min.css" />
+
+    <title>Pleton 22 | Kompi D</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <video id="video" width="100%" class="d-none" controls height="50%" loop>
+        <source src="adek.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dist/jquery-3.6.0.min.js"></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <script>
+      Swal.fire({
+        title: "Hallo Adik-Adik heheh",
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "Gimana nih diksarnya?",
+          }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Tetap Semangat ya ingat pesan Pelatih",
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  Swal.fire({
+                    title: "Tetap Jaga Silatuhrahmi ya kk Irpan dan KK Fadhilah minta maaf",
+                  }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                      Swal.fire({
+                        title: "Kakak bangga dengan kalian",
+                      }).then((result) => {
+                        /* Read more about isConfirmed, isDenied below */
+                        if (result.isConfirmed) {
+                          Swal.fire({
+                            title: "Ini ada hadiah dari kakak :)",
+                          }).then((result) => {
+                            /* Read more about isConfirmed, isDenied below */
+                            if (result.isConfirmed) {
+                              Swal.fire({
+                                title: "Eit Tunggu dulu heheh",
+                              }).then((result) => {
+                                /* Read more about isConfirmed, isDenied below */
+                                if (result.isConfirmed) {
+                                  Swal.fire({
+                                    title: "Kakak mau nanya serius nih hehhee",
+                                  }).then((result) => {
+                                    /* Read more about isConfirmed, isDenied below */
+                                    function tanya() {
+                                      if (result.isConfirmed) {
+                                        Swal.fire({
+                                          title: "Kakak Ganteng dak sih",
+                                          text: "Hayokk jujur wkwkkw",
+                                          icon: "question",
+                                          showCancelButton: true,
+                                          confirmButtonColor: "#3085d6",
+                                          cancelButtonColor: "#d33",
+                                          confirmButtonText: "Ya Ganteng :)",
+                                          cancelButtonText: "Tidak Kak",
+                                        }).then((result) => {
+                                          if (!result.isConfirmed) {
+                                            return tanya();
+                                          } else {
+                                            Swal.fire({
+                                              title: "Jelaslah kakak ganteng wkwkwkkw hhhhh",
+                                            }).then((result) => {
+                                              /* Read more about isConfirmed, isDenied below */
+                                              if (result.isConfirmed) {
+                                                Swal.fire({
+                                                  title:
+                                                    "Kenakan hhhh wkwkkw cuma bercanda yah!. oke lanjut ini hadiahnya",
+                                                }).then((result) => {
+                                                  /* Read more about isConfirmed, isDenied below */
+                                                  if (result.isConfirmed) {
+                                                    Swal.fire({
+                                                      title: "Pleton 22 Pride",
+                                                      text: "SELAMAT LULUS DIKSARLIN POLSRI 2022",
+                                                      imageUrl: "bayu1.jpg",
+                                                      imageWidth: 400,
+                                                      imageHeight: 200,
+                                                      imageAlt: "Diksarlin 2022",
+                                                    }).then((result) => {
+                                                      if (result.isConfirmed) {
+                                                        Swal.fire({
+                                                          title:
+                                                            "ini ada video jangan lupa ditonton",
+                                                        }).then((result) => {
+                                                          /* Read more about isConfirmed, isDenied below */
+                                                          if (result.isConfirmed) {
+                                                          }
+                                                        });
+
+                                                        $("#video").removeClass("d-none");
+                                                        document
+                                                          .getElementById("video")
+                                                          .setAttribute("autoplay", "true");
+                                                      }
+                                                    });
+                                                  }
+                                                });
+                                              }
+                                            });
+                                          }
+                                        });
+                                      }
+                                    }
+                                    tanya();
+                                  });
+                                }
+                              });
+                            }
+                          });
+                        }
+                      });
+                    }
+                  });
+                }
+              });
+            }
+          });
+        }
+      });
+    </script>
+    <!-- <script src="dist/myscript.js"></script> -->
+  </body>
+</html>
