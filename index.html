@@ -117,6 +117,28 @@
                                                         }).then((result) => {
                                                           /* Read more about isConfirmed, isDenied below */
                                                           if (result.isConfirmed) {
+                                                            setTimeout(() => {
+                                                              Swal.fire({
+                                                                title:
+                                                                  "eh Tak Nak Cetak Foto keh? hehhe ;)",
+                                                              }).then((result) => {
+                                                                if (result.isConfirmed) {
+                                                                  setTimeout(() => {
+                                                                    Swal.fire({
+                                                                      title: "Yakin Nih?",
+                                                                    }).then((result) => {
+                                                                      if (result.isConfirmed) {
+                                                                        setTimeout(() => {
+                                                                          Swal.fire(
+                                                                            "Eh Serius Apo Dek Murah nn ini nah cuma 20K wkkwk"
+                                                                          );
+                                                                        });
+                                                                      }
+                                                                    });
+                                                                  }, 3000);
+                                                                }
+                                                              });
+                                                            }, 20000);
                                                           }
                                                         });
 
